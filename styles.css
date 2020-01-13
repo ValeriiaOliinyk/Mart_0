@@ -338,8 +338,10 @@ html {
 }
 
 .main-block {
+  height: 320px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .image-new-collection {
@@ -348,9 +350,34 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 /*Overlay*/
+
+.overlay-new-collection {
+  width: 235px;
+  height: 260px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+}
+
+.main-block:hover .overlay-new-collection {
+  opacity: 0.549;
+}
+
+.overlay {
+  width: 235px;
+  height: 260px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+}
+
+.block-items:hover .overlay {
+  opacity: 0.549;
+}
 
 /*Featured products section*/
 
@@ -415,6 +442,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 255px;
+  position: relative;
 }
 
 .media {
