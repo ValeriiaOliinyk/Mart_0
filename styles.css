@@ -38,6 +38,10 @@ html {
   margin-bottom: 70px;
 }
 
+.title-footer {
+  margin-bottom: 25px;
+}
+
 .green-line::after {
   content: url(images/line.png);
   display: flex;
