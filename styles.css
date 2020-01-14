@@ -35,13 +35,13 @@ html {
   margin: 0;
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 70px;
 }
 
 .green-line::after {
   content: url(images/line.png);
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
 }
 
 .white-line::after {
@@ -103,12 +103,17 @@ html {
   list-style-type: none;
   font-family: var(--font-family);
   margin-right: 30px;
-  color: var(--color-type);
+
   cursor: pointer;
 }
 
 .my-account:last-child {
   margin-right: 0;
+}
+
+.my-account-link {
+  text-decoration: none;
+  color: var(--color-type);
 }
 
 .fix {
@@ -379,6 +384,19 @@ html {
   opacity: 0.549;
 }
 
+.overlay-list {
+  padding: 0;
+}
+
+.overlay-items {
+  list-style-type: none;
+}
+
+.overlay-button {
+  padding: 0;
+  border: 0;
+}
+
 /*Featured products section*/
 
 .things-list {
@@ -571,7 +589,6 @@ html {
 
 .form {
   width: 540px;
-  height: 60px;
   border: 1px solid white;
   background-color: white;
   border-radius: 5px;
@@ -605,6 +622,8 @@ html {
   margin-top: 2px;
   margin-bottom: 2px;
   margin-right: 2px;
+  background-image: url(images/input.png);
+  background-position: center;
 }
 
 .container-form {
